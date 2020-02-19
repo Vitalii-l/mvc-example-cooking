@@ -4,19 +4,19 @@
  */
 class Model {
     // подготовка вывода всего списка
-    public function getBookList() {
-        include_once 'model/booksArray.php';
-        return $books;        
+    public function getDishList() {
+        include_once 'model/cookArray.php';
+        return $dishes;        
     }
 //-----------------------------------------------
     // вывод одной записи
-    public function getBook($title) {
-        $allBook = Model::getBookList();
+    public function getDish($title) {
+        $allBook = Model::getDishList();
         $i = 0;
         $test = array(FALSE);
-        foreach ($allBook as $oneBook) {
-            if ($oneBook['bookname'] == $title){
-                $test = array(true, $allBook[$i]);
+        foreach ($allDishes as $oneDish) {
+            if ($oneDish['dishname'] == $title){
+                $test = array(true, $allCook[$i]);
                 return $test;
             }
             $i++;
