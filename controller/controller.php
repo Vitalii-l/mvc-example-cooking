@@ -6,23 +6,23 @@ class Controller {
         include 'view/main.php';
     }
     // -------------------------list
-    public function BookList() {
-        // получить массив books для вывода данных
-        // $bookList - хранит массив books
-        $booksList = Model::getBookList();
+    public function RecipesList() {
+        // получить массив recipes для вывода данных
+        // $recipehList - хранит массив dishes
+        $recipeList = Model::getRecipesList();
         
         // деалем вывод на страницу списка
-        include 'view/bookList.php';
+        include 'view/recipesList.php';
     }
     //--------------------------one
-    public function bookOne($title){
-        // $title - название книги в адресной строке
-        $test = Model::getBook($title);
+    public function recipeOne($title){
+        // $title - название блюда в адресной строке
+        $test = Model::getRecipe($title);
         
-        // делаем вывод на страницу одной книги
+        // делаем вывод на страницу одного рецепта
         if($test[0] == true){
-            $book = $test[1];
-            include 'view/bookOne.php';
+            $recipe = $test[1];
+            include 'view/recipeOne.php';
         } else {
             include 'view/error404.php';
         }

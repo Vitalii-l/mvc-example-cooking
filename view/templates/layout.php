@@ -6,12 +6,12 @@
 <body>
     <div class="container">
       <div class="header clearfix">
-	  <h2>Книжный магазин</h2>
+	  <h2>Рецепты</h2>
         <h4 class="text-muted">
             <?php
               echo '<a href="./">Главная</a> &#187 ';
-              echo '<a href="books">Книги</a> ';
-              if (!empty($book['bookname'])) echo ' &$187 ' .$book['bookname'];
+              echo '<a href="recipes">Рецепты</a> ';
+              if (!empty($recipe['recipename'])) echo ' &$187 ' .$recipe['recipename'];
             ?>
         </h4>
       </div>	  
@@ -19,7 +19,7 @@
 	<?php
         // переменная $content - содержимое страницы,
         // получает значение в зависимости от выбора: ссылка, значение поля...
-        // в нашем проекте это будет либо список, либо одна запись-книга
+        // в нашем проекте это будет либо список, либо одна запись-рецепт
         // значение получает в файлах из папки view- представление
         echo $content;  ?>
       </div>
