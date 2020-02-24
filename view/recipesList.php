@@ -5,8 +5,7 @@
  * на вывод $recipesList придет из контроллера
  */
 ob_start();
-?>
-<?php
+
 foreach ($recipesList as $recipeOne) {
     echo '<article>';
     echo '<h3>';
@@ -21,8 +20,6 @@ foreach ($recipesList as $recipeOne) {
     echo '</article>';
     echo '<div style="clear:both;"></div>';
 }
-?>
 
-<?php
 $content = ob_get_clean();
 include 'view/templates/layout.php';

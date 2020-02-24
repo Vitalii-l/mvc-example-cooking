@@ -3,7 +3,7 @@
 /* 
  * вывод одной recipe
  * в модель сформировать массив recipes, из controller отправить массив
- * на вывод $recipe придет из контроллера
+ * на вывод, $recipe придет из контроллера
  */
 ob_start();
     echo '<article class="oneitem">';
