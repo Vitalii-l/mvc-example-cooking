@@ -9,7 +9,7 @@ class Controller {
     public function RecipesList() {
         // получить массив recipes для вывода данных
         // $recipehList - хранит массив dishes
-        $recipeList = Model::getRecipesList();
+        $recipesList = Model::getRecipesList();
         
         // деалем вывод на страницу списка
         include 'view/recipesList.php';

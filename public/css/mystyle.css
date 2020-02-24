@@ -15,10 +15,16 @@
                 padding: 10px 20px;
                 margin: 20px;
                 color: #313331;
-				min-height:200px;
+				min-height:225px;
 				width:700px;
-				
             }
+            .oneitem {
+            	min-height:525px;
+            }
+            .oneitem img {
+            	width: 300px;
+            }
+ 
             article h3{
                 color: #4e4e4e;
             }

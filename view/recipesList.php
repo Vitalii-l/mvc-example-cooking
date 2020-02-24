@@ -1,8 +1,8 @@
 <?php
 /* 
  * вывод списка recipes
- * в модели сформировать масси recipes, из controller отправить массив
- * на вывод $books_list придет из контроллера
+ * в модели сформировать массив recipes, из controller отправить массив
+ * на вывод $recipesList придет из контроллера
  */
 ob_start();
 ?>
@@ -10,11 +10,11 @@ ob_start();
 foreach ($recipesList as $recipeOne) {
     echo '<article>';
     echo '<h3>';
-    echo '<a href="recipe?title='.$recipeOne['recipename'].'">'.$recipeOne['recipe'].'</a>';
+    echo '<a href="recipe?title='.$recipeOne['recipename'].'">'.$recipeOne['recipename'].'</a>';
     echo '</h3>';
     echo '<img src="public/images/'.$recipeOne['image'].'">';
-    echo '<p>Author(s): '.$recipeOne['author'].'</p>';
-    # echo '<p>Price: '.$bookOne['price'].'</p>';
+    echo '<p>Cousin: '.$recipeOne['cousin'].'</p>';
+    echo '<p>Time: '.$recipeOne['time'].'</p>';
     echo '<p style="padding-top:10px;">';
     echo '<a href="recipe?title='.$recipeOne['recipename'].'" role="button"> Содержание &raquo;</a>';
     echo '</p>';

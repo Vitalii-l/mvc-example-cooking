@@ -11,7 +11,7 @@
             <?php
               echo '<a href="./">Главная</a> &#187 ';
               echo '<a href="recipes">Рецепты</a> ';
-              if (!empty($recipe['recipename'])) echo ' &$187 ' .$recipe['recipename'];
+              if (!empty($recipe['recipename'])) echo ' &#187 ' .$recipe['recipename'];
             ?>
         </h4>
       </div>	  

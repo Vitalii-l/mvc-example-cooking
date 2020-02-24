@@ -14,14 +14,14 @@ $way = explode('/', $host)[$num];
 if ($way == '' || $way == 'index.php') {
     $response = Controller::StartSite();
 }
-elseif ($way == 'books') {
-    $response = Controller::BookList();
+elseif ($way == 'recipes') {
+    $response = Controller::RecipesList();
 }
-elseif ($way == 'book') {
+elseif ($way == 'recipe') {
     if (isset($_GET['title'])){
         $title = $_GET['title'];
     }
-    $response = Controller::BookOne($title);
+    $response = Controller::recipeOne($title);
 }
 else {
     // функция уонтроллера - загрузка файла ошибок
